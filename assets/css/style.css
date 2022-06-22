@@ -1,0 +1,256 @@
+/* Universal */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: rgb(184, 184, 184);
+}
+
+/* header */
+
+
+.navbar {
+    width: 100%;
+    margin: auto;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: grey;
+}
+
+.logo {
+    width: 100%;
+    color: white;
+    font-size: 50px;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    text-align: right;
+    margin: 10px 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+
+.navbar ul li:hover::after {
+    width: 100%;
+
+}
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: left;
+    color: #009688;
+    font-size: 30px;
+}
+
+#about {
+    margin-bottom: 300px;
+    padding-left: 200px;
+}
+
+#work {
+    margin-bottom: 300px;
+    padding-left: 200px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    padding: 35px;
+    background-color: grey;
+    text-align: center;
+  }
+
+#contact {
+    margin-bottom: 50px;
+    text-align: left;
+    color: white;
+    font-size: 30px;
+    padding-left: 50px;
+}
+
+
+.contact-info {
+    margin-bottom: 50px;
+    text-align: left;
+    color: white;
+    font-size: 30px;
+    padding-left: 50px;
+}
+
+
+  
+/*
+
+this gives pur text spacing
+    -try putting this in the body
+  line-height: 1;
+
+
+this gives a line under text.. or said position
+
+article {
+  border-bottom: 1px solid #d8a47f;
+}
+
+
+Media reference
+
+@media screen and (max-width: 768px) {
+  header, main {
+    flex-direction: column;
+  }
+
+  section {
+    padding-right: 0;
+  }
+
+  aside {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+
+*/
+
+
+
+
+
+
+/* 
+body {
+    background: rgb(235, 235, 235);;
+}
+
+header.nav-bar {
+    background: grey;
+    color: white;
+    padding: 5px 0px;
+}
+
+h2 {
+    background-color: aquamarine;
+    color: grey;
+    text-align: end;
+    padding: 15px;
+    width: 200px;
+    height: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    text-align: center;
+}
+
+nav a {
+    color: aquamarine;
+    text-decoration: line;
+    padding: 1%;
+}
+
+header figure {
+    height: 150px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/blue-wooden-planks.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+header .image-text {
+    background-color: aquamarine;
+    color: grey;
+    text-align: end;
+    padding: 15px;
+    width: 200px;
+    height: 10px;
+    bottom: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+main #about-me {
+    padding: 30px 50px;
+}
+
+main #work {
+    padding: 30px 50px;
+}
+
+main #contact-me {
+    padding: 30px 50px;
+} */
+
+/* 
+    padding: 30px 50px;
+
+*/
+
+
+
+/*     
+    background-size: 100% 300px;
+    background-position: center;
+} */
+
+
+
+
+
+
+
+
+/* background-image: src="assets/images/blue-wooden-planks.jpg" alt="blue-wooden-planks"; */
+
+
+
+/* 
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+ */
+
+
+
+
+/* background: rgb(235, 235, 235); */
