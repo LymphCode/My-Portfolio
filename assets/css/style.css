@@ -1,105 +1,231 @@
 /* Universal */
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
 
-html, body {
-    background: rgb(209, 209, 209);
+body {
+    background: rgb(184, 184, 184);
 }
-
-
 
 /* header */
 
-header {
-    height: 80px;
-    background: grey;
+
+.navbar {
+    width: 100%;
+    margin: auto;
+    padding: 35px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0rem calc((100vw - 1300px) / 2);
-} 
+    justify-content: space-between;
+    background-color: grey;
+}
 
 .logo {
+    width: 100%;
     color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    padding: 0 2rem;
+    font-size: 50px;
 }
 
-header nav a {
-    text-decoration: none;
-    color: white;
-    padding: 0 1.5rem;
-
+.navbar .nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 100px;
 }
 
-/* main content */
-
-main {
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 100px;
-}
-
-.self-pic {
-    display: flex;
-    justify-content: center;
-    max-width: 200px;
-    max-height: auto;
-}
-
-.container {
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    text-align: right;
+    margin: 10px 20px;
     position: relative;
 }
 
-.work-img {
-    display: flex;
-    justify-content: center;
-    max-width: 800px;
-    max-height: auto;
-}
-
-
-.bottom-left {
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
     position: absolute;
-
-    font-size: 18px;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
 }
 
 
-/* footer/contact info */
-
-footer {
-    margin-top: 100%;
-    width: 100% 5px;
-    padding: 10px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: grey;
-}
-
-#contact {
-    display: flex;
-    font-size: 3rem;
+.navbar ul li:hover::after {
     width: 100%;
+
 }
 
-a[href]:hover {
-    color: #d8a47f;
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
 }
 
-footer a {
+
+/* Our main content */
+
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: left;
+    color: #009688;
+    font-size: 30px;
+}
+
+#about {
+    padding-left: 200px;
+}
+
+#work {
+  margin: 300px 0 300px 0;
+    margin-bottom: 1000px;
+    padding-left: 200px;
+}
+
+
+/* Our footer containing conatct info */
+
+.footer {
     display: flex;
-    padding: 30px 150px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    padding: 35px;
+    background-color: grey;
+  }
+
+.contact {
+    margin-bottom: 50px;
+    text-align: left;
     color: white;
-    text-decoration: none;
+    font-size: 30px;
+    padding: 30px 0 0 50px;
 }
+
+.contact-info {
+  padding-right: 200px;
+  margin-bottom: 20px;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: none;
+  display: inline;
+  justify-content: space-around;
+  margin-inline: 20px;
+  position: relative;
+}
+
+.contact-info ::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+
+.contact-info :hover::after {
+  width: 100%;
+
+}
+
+
+
+
+/* margin-bottom can raise a value up (like maybe to the bottom of an image?) */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .contact-info {
+    display: flex;
+    margin-bottom: 50px;
+    text-align: right;
+    color: white;
+    font-size: 12px;
+    
+} */
+
+
+  
+/*
+
+this gives pur text spacing
+    -try putting this in the body
+  line-height: 1;
+
+
+this gives a line under text.. or said position
+
+article {
+  border-bottom: 1px solid #d8a47f;
+}
+
+
+Media reference
+
+@media screen and (max-width: 768px) {
+  header, main {
+    flex-direction: column;
+  }
+
+  section {
+    padding-right: 0;
+  }
+
+  aside {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+
+
+*/
